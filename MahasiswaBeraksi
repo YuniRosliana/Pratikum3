@@ -1,0 +1,34 @@
+public class MahasiswaBeraksi {
+    public static void main(String[] args){
+        //membuat objek
+        Manager Yuni = new Manager();
+        Programmer Yoga = new Programmer();
+        Mahasiswa Dafa = new Mahasiswa();
+
+        /* memanggil atribut dan memberi nilai */
+        Dafa.setNim("11002206");
+        Dafa.nama = "Dafa Prajaya";
+        Dafa.jenisKelamin = "Laki-laki";
+        Dafa.umur = 25;
+        Dafa.alamat = "Bekasi Kota";
+        Dafa.setJurusan("Informatika");
+        System.out.println("Nim           : " + Dafa.getNim());
+        System.out.println("Jurusan       : " + Dafa.getJurusan());
+
+        //memanggil pegawai Manager
+        Yuni.setNama("Yuni Rosliana");
+        Yuni.setGajiPokok(4000000);
+        Yuni.setTunjangan(600000);
+
+        //memanggil pegawai Programmer
+        Yoga.setNama("Yoga Raksa Rasendria");
+        Yoga.setGajiPokok(6000000);
+        Yoga.setBonus(1000000);
+
+
+        Dafa.cetakInfo();
+        Yuni.cetakInfo();
+        Yoga.cetakInfo();
+
+}
+}
